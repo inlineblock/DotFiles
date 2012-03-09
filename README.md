@@ -4,6 +4,7 @@ REQUIREMENTS
 
 * XCode: AppStore
 * OSX GCC Installer: https://github.com/kennethreitz/osx-gcc-installer (Bundler etc)
+* RVM http://beginrescueend.com/
 * Brew: https://github.com/mxcl/homebrew
 * Zsh: brew
 * MacVIM: brew
