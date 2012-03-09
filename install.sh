@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -i
 
 #thnx jocafa
 cd "$(dirname "$0")"
