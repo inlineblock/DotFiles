@@ -1,7 +1,7 @@
 "------------------------------------------------------------------[General]----
 set secure "locks down the exrc setting
 set exrc "enable cwd .vimrc files
-
+	
 set nocompatible
 set encoding=utf8
 
@@ -11,12 +11,12 @@ syntax on
 filetype plugin indent on
 
 set backspace=indent,eol,start
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
 set nowrap
 set nofoldenable
 "set autoindent
+	
 
 set vb
 set t_vb=""
