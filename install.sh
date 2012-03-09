@@ -34,6 +34,13 @@ ln -s $DIR/.zshrc ~/
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim +BundleInstall +qall
+
+# now we need to build command T
+cd ~/.vim/bundle/Command-T/ruby/command-t/
+ruby extconf.rb
+rvm use system
+make
+
 echo ""
 echo ""
 echo "Git commit name: "
