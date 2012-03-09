@@ -1,17 +1,45 @@
-#!/bin/sh
+#!/bin/bash
 #thnx jocafa
+cd "$(dirname "$0")"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+removeFiles()
+{
+	rm -rf ~/.vim/bundle
+	rm -f ~/.gitconfig ~/.gitignore_global ~/.gvimrc ~/.inputrc ~/.jshintrc ~/.jsl.conf ~/.vimrc ~/.vundles ~/.zshrc
+}
+
+while true; do
+	read -p "Do you want to remove existing files?" yn
+	case $yn in
+		[Yy]* ) removeFiles; break;;
+		[Nn]* ) break;;
+		* ) echo "Please answer yes or no.";;
+	esac
+done
+
+
 mkdir -p ~/.vim/bundle
 
-ln -s .gitconfig ~/
-ln -s .gitignore_global ~/
-ln -s .gvimrc ~/
-ln -s .inputrc ~/
-ln -s .jshintrc ~/
-ln -s .jsl.conf ~/
-ln -s .vimrc ~/
-ln -s .vundles ~/
-ln -s .zshrc ~/
+cp $DIR/.gitconfig ~/
+ln -s $DIR/.gitignore_global ~/
+ln -s $DIR/.gvimrc ~/
+ln -s $DIR/.inputrc ~/
+ln -s $DIR/.jshintrc ~/
+ln -s $DIR/.jsl.conf ~/
+ln -s $DIR/.vimrc ~/
+ln -s $DIR/.vundles ~/
+ln -s $DIR/.zshrc ~/
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim +BundleInstall +qall
+
+echo ""
+echo "Git commit name:"
+read gname
+git config --global user.name "$gname"
+echo ""
+echo "Git commit email:"
+read gemail
+git config --global user.email "$gemail"
 

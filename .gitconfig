@@ -1,9 +1,9 @@
 [user]
-	name = Dennis Wilkins
-	email = dennis.wilkins@moneydesktop.com
+	name =
+	email =
 [core]
 	editor = vim
-	excludesfile = /Users/dennis/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [merge]
 	tool = opendiff
 
