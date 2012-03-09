@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #thnx jocafa
 cd "$(dirname "$0")"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -10,7 +11,7 @@ removeFiles()
 }
 
 while true; do
-	read -p "Do you want to remove existing files?" yn
+	read -p "Do you want to remove existing files? " yn
 	case $yn in
 		[Yy]* ) removeFiles; break;;
 		[Nn]* ) break;;
@@ -33,13 +34,17 @@ ln -s $DIR/.zshrc ~/
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim +BundleInstall +qall
-
 echo ""
-echo "Git commit name:"
+echo ""
+echo "Git commit name: "
 read gname
-git config --global user.name "$gname"
+if [[ ! -z $gname ]] ; then
+	git config --global user.name "$gname"
+fi
 echo ""
-echo "Git commit email:"
+echo "Git commit email: "
 read gemail
-git config --global user.email "$gemail"
+if [[ ! -z $gemail ]] ; then
+	git config --global user.email "$gemail"
+fi
 
