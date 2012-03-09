@@ -37,9 +37,9 @@ vim +BundleInstall +qall
 
 # now we need to build command T
 cd ~/.vim/bundle/Command-T/ruby/command-t/
-ruby extconf.rb
 rvm use system
-make
+CC=/usr/bin/gcc ruby extconf.rb
+CC=/usr/bin/gcc make
 
 echo ""
 echo ""
