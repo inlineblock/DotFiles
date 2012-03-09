@@ -101,6 +101,7 @@ vnoremap > >gv
 
 map <C-F> :CommandT<CR>
 map <C-T> :tab new<CR>
+map <C-P> :e#<CR>
 noremap <C-E> A
 noremap <C-A> I
 nmap <F1> <Esc>
