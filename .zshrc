@@ -70,6 +70,8 @@ bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 bindkey "\e[3~" delete-char # Del
 
+export GCC=/usr/bin/gcc
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export CC=$GCC
 bindkey -e
+

@@ -51,7 +51,7 @@ colorscheme molokai
 
 syn on
 
-silent! set colorcolumn=80
+silent! set colorcolumn=120
 
 function! SyntaxItem()
 	return synIDattr(synID(line("."),col("."),1),"name")
@@ -99,11 +99,10 @@ map <Leader>n :NERDTree<CR>
 vnoremap < <gv
 vnoremap > >gv
 
-map <C-F> :CommandT<CR>
+"map <C-F> :CommandT<CR>
+map <C-F> :CommandTFlush<CR>:CommandT<CR>
 map <C-T> :tab new<CR>
 map <C-P> :e#<CR>
-noremap <C-E> A
-noremap <C-A> I
 nmap <F1> <Esc>
 imap <F1> <Esc>
 
