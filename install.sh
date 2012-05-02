@@ -22,6 +22,7 @@ makeLinks()
 	ln -s $DIR/.vimrc ~/
 	ln -s $DIR/*.vim ~/.vim/
 	ln -s $DIR/.zshrc ~/
+	ln -s $DIR/.bashrc ~/
 
 	cp $DIR/.gitconfig ~/.gitconfig
 }

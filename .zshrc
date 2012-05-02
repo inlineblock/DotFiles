@@ -75,3 +75,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export CC=$GCC
 bindkey -e
 
+alias vi='vim' # never use vi
