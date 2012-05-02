@@ -20,7 +20,7 @@ makeLinks()
 	ln -s $DIR/.jshintrc ~/
 	ln -s $DIR/.jsl.conf ~/
 	ln -s $DIR/.vimrc ~/
-	ln -s $DIR/.vundles ~/
+	ln -s $DIR/*.vim ~/.vim/
 	ln -s $DIR/.zshrc ~/
 
 	cp $DIR/.gitconfig ~/.gitconfig
