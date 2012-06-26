@@ -11,11 +11,10 @@ syntax on
 filetype plugin indent on
 
 set backspace=indent,eol,start
-set tabstop=4
-set shiftwidth=4
+set shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+
 set nowrap
 set nofoldenable
-set noexpandtab
 set autoindent
 	
 

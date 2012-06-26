@@ -1,4 +1,4 @@
-
+#vim
 alias vi='vim' # never use vi
 
 #git 
