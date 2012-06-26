@@ -7,7 +7,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 removeFiles()
 {
 	rm -rf ~/.vim
-	rm -f ~/.gitconfig ~/.gitignore_global ~/.gvimrc ~/.inputrc ~/.jshintrc ~/.jsl.conf ~/.vimrc ~/.vundles ~/.zshrc
+	rm -f ~/.gitconfig ~/.gitignore_global ~/.gvimrc
+	rm -rf ~/.inputrc ~/.jshintrc ~/.jsl.conf ~/.vimrc ~/.vundles ~/.zshrc
+	rm -rf ~/.bashrc ~/.bash_aliases
 }
 
 makeLinks()
