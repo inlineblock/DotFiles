@@ -78,3 +78,8 @@ bindkey -e
 
 
 source ~/.bash_aliases
+
+if [ -d $HOME/bin ]; then
+  export PATH=$PATH:$HOME/bin
+fi
+
