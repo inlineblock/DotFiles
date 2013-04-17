@@ -17,6 +17,8 @@ map <Leader>gd :GdiffInTab<CR>
 vnoremap < <gv
 vnoremap > >gv
 
+map <Leader>rt ggVG :retab<CR>
+
 "map <C-F> :CommandT<CR>
 " i hate flushing, so this just does it for me automatically, but would be
 " slow on huge filesets

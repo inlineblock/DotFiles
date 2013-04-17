@@ -37,11 +37,6 @@ export EDITOR=vim
 source $HOME/.rvm/scripts/rvm
 #export NODE_PATH=/usr/local/lib/node_modules
 
-alias jslint="jsl -conf ~/.jsl.conf -process"
-alias phantomjs="/Applications/phantomjs.app/Contents/MacOS/phantomjs"
-alias buspirate="screen /dev/tty.usbserial-A700ekMH 115200 8N1"
-
-
 bindkey "\e[1~" beginning-of-line # Home
 bindkey "\e[4~" end-of-line # End
 bindkey "\e[5~" beginning-of-history # PageUp
@@ -83,3 +78,6 @@ if [ -d $HOME/bin ]; then
   export PATH=$PATH:$HOME/bin
 fi
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

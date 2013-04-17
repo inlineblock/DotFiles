@@ -50,7 +50,7 @@ colorscheme molokai
 
 syn on
 
-silent! set colorcolumn=120
+silent! set colorcolumn=90
 
 function! SyntaxItem()
 	return synIDattr(synID(line("."),col("."),1),"name")
@@ -85,4 +85,4 @@ set matchtime=2
 
 source ~/.vim/autocmd.vim
 source ~/.vim/keybindings.vim
-
+set backupskip=/tmp/*,/private/tmp/*

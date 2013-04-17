@@ -1,6 +1,5 @@
 set guioptions=ae
-"set guifont=ProFontWindows:h12.00
-set guifont=ProFontX:h15.00
+set guifont=ProFontX:h14.00
 ""set guifont=Monaco:h10.00
 "colors jolokai
 ""colors pyte
