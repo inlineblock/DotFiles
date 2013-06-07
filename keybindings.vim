@@ -14,6 +14,8 @@ map <Leader>n :NERDTree<CR>
 map <Leader>gb :Gblame<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gd :GdiffInTab<CR>
+map <Leader>c :silent !pbcopy < %<CR>:redraw!<CR>
+
 vnoremap < <gv
 vnoremap > >gv
 
