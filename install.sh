@@ -16,19 +16,19 @@ makeLinks()
 {
 	mkdir -p ~/.vim/bundle
 
-	ln -s $DIR/.gitignore_global ~/
-	ln -s $DIR/.gvimrc ~/
-	ln -s $DIR/.inputrc ~/
-	ln -s $DIR/.jshintrc ~/
-	ln -s $DIR/.jsl.conf ~/
-	ln -s $DIR/.vimrc ~/
+	ln -s $DIR/gitignore_global ~/.gitignore_global
+	ln -s $DIR/gvimrc ~/.gvimrc
+	ln -s $DIR/inputrc ~/.inputrc
+	ln -s $DIR/jshintrc ~/.jshintrc
+	ln -s $DIR/jsl.conf ~/.jsl.conf
+	ln -s $DIR/vimrc ~/.vimrc
 	ln -s $DIR/*.vim ~/.vim/
-	ln -s $DIR/.zshrc ~/
-	ln -s $DIR/.bashrc ~/
-	ln -s $DIR/.bash_aliases ~/
-	ln -s $DIR/.gemrc ~/
+	ln -s $DIR/zshrc ~/.zshrc
+	ln -s $DIR/bashrc ~/.bashrc
+	ln -s $DIR/bash_aliases ~/.bash_aliases
+	ln -s $DIR/gemrc ~/.gemrc
 
-	cp $DIR/.gitconfig ~/.gitconfig
+	cp $DIR/gitconfig ~/.gitconfig
 }
 
 vundlize ()

@@ -18,6 +18,11 @@ autocmd FileType haml set makeprg=haml\ %:p\ %:p:s?haml?html?
 "-----------------------------------------------------------------[SASS]----
 autocmd BufNewFile,BufRead *.sass set filetype=sass
 
+
+"-----------------------------------------------------------------[ERB]----
+autocmd BufNewFile,BufRead *.erb set filetype=eruby
+autocmd FileType eruby set nocindent autoindent smartindent
+
 "-----------------------------------------------------------[JavaScript]----
 autocmd BufNewFile,BufRead *.js set filetype=javascript
 autocmd FileType javascript set nocindent autoindent smartindent
@@ -49,7 +54,7 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 
 "-------------------------------------------------------------[Markdown]----
 autocmd BufNewFile,BufRead *.md,*.mkd,*.markdown set filetype=markdown
-autocmd FileType markdown set wrap linebreak
+autocmd FileType markdown set wrap linebreak spell
 
 "---------------------------------------------------------[ Processing ]----
 autocmd BufNewFile,BufRead *.pde set filetype=java
