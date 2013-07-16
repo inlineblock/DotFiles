@@ -7,7 +7,9 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="jocafa"
 ZSH_THEME="jreese"
+
 export PB_CLIENT_TYPE=Zmq
+export PB_IGNORE_DEPRECATIONS=1
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
