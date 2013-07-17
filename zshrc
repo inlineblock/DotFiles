@@ -80,6 +80,10 @@ if [ -d $HOME/bin ]; then
   export PATH=$PATH:$HOME/bin
 fi
 
+if [ -d /usr/local/share/npm/bin ]; then
+  export PATH=$PATH:/usr/local/share/npm/bin
+fi
+
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
