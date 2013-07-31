@@ -83,6 +83,8 @@ set wildmenu
 set showmatch
 set matchtime=2
 
+set wildignore+=*.o,*.obj,.git,public/assets/**,tmp/**
+
 source ~/.vim/autocmd.vim
 source ~/.vim/keybindings.vim
 set backupskip=/tmp/*,/private/tmp/*
