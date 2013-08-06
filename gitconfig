@@ -6,6 +6,7 @@
 	excludesfile = ~/.gitignore_global
 [merge]
 	tool = opendiff
-
+[push]
+  default = simple
 [color]
 	ui = auto
