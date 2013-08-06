@@ -26,6 +26,7 @@ makeLinks()
 	ln -s $DIR/zshrc ~/.zshrc
 	ln -s $DIR/bashrc ~/.bashrc
 	ln -s $DIR/bash_aliases ~/.bash_aliases
+	ln -s $DIR/bash_functions ~/.bash_functions
 	ln -s $DIR/gemrc ~/.gemrc
 
 	cp $DIR/gitconfig ~/.gitconfig

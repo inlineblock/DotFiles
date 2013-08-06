@@ -75,6 +75,7 @@ bindkey -e
 
 
 source ~/.bash_aliases
+source ~/.bash_functions
 
 if [ -d $HOME/bin ]; then
   export PATH=$PATH:$HOME/bin
