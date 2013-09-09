@@ -10,6 +10,7 @@ ZSH_THEME="jreese"
 
 export PB_CLIENT_TYPE=Zmq
 export PB_IGNORE_DEPRECATIONS=1
+export GIT_MERGE_AUTOEDIT=no
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

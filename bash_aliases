@@ -15,3 +15,5 @@ alias bx="b exec"
 alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
 alias kill_rails="pkill -9 -f 'rails'"
 alias http_server="python -m SimpleHTTPServer"
+
+alias redock="killall Dock"

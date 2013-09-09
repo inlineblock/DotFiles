@@ -83,7 +83,7 @@ set wildmenu
 set showmatch
 set matchtime=2
 
-set wildignore+=*.o,*.obj,.git,public/assets/**,tmp/**,*.gif,*.png,*.jpg,*.jpeg,*.eot,*.ttf,*.woff,*.gem,*.swf
+set wildignore+=*.o,*.obj,.git,public/assets/**,tmp/**,*.gif,*.png,*.jpg,*.jpeg,*.eot,*.ttf,*.woff,*.gem,*.swf,log/**
 
 source ~/.vim/autocmd.vim
 source ~/.vim/keybindings.vim
