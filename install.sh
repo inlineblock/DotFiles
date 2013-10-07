@@ -8,7 +8,7 @@ removeFiles()
 {
 	rm -rf ~/.vim
 	rm -f ~/.gitconfig ~/.gitignore_global ~/.gvimrc ~/.gemrc
-	rm -rf ~/.inputrc ~/.jshintrc ~/.jsl.conf ~/.vimrc ~/.vundles ~/.zshrc
+	rm -rf ~/.inputrc ~/.jshintrc ~/.jsl.conf ~/.vimrc ~/.vundles ~/.zshrc ~/.bash_functions
 	rm -rf ~/.bashrc ~/.bash_aliases
 }
 
