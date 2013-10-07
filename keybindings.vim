@@ -29,7 +29,7 @@ map <C-T> :tab new<CR>
 nmap <F1> <Esc>
 imap <F1> <Esc>
 
-imap <S-BS> <C-[>diwi
+imap <S-BS> <C-[>diwa
 
 
 command GdiffInTab tabedit %|Gdiff
