@@ -29,7 +29,18 @@ map <C-T> :tab new<CR>
 nmap <F1> <Esc>
 imap <F1> <Esc>
 
-imap <S-BS> <C-[>diwa
+imap <S-BS> <C-[>diwi
 
+vnoremap / 0<C-V>I// <esc>
 
 command GdiffInTab tabedit %|Gdiff
+
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
