@@ -75,6 +75,10 @@ export CC=$GCC
 bindkey -e
 
 
+if [ -f $HOME/.privaterc ]; then
+  source $HOME/.privaterc
+fi
+
 source ~/.bash_aliases
 source ~/.bash_functions
 
