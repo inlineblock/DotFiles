@@ -88,3 +88,6 @@ set wildignore+=*.o,*.obj,.git,public/assets/**,tmp/**,*.gif,*.png,*.jpg,*.jpeg,
 source ~/.vim/autocmd.vim
 source ~/.vim/keybindings.vim
 set backupskip=/tmp/*,/private/tmp/*
+"-----------------------------------------------------------[JavaScript]----
+let g:jsx_ext_required = 0
+let javascript_enable_domhtmlcss = 1

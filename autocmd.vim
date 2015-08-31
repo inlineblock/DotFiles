@@ -3,8 +3,8 @@
 "---------------------------------------------------------------------------
 
 "-----------------------------------------------------------------[HTML]----
-autocmd BufNewFile,BufRead *.htm,*.html set filetype=html.css.javascript
-autocmd FileType html.css.javascript set nocindent autoindent smartindent
+autocmd BufNewFile,BufRead *.htm,*.html set filetype=html.css.javascript.jsx
+autocmd FileType html.css.javascript.jsx set nocindent autoindent smartindent
 
 "------------------------------------------------------------------[CSS]----
 autocmd BufNewFile,BufRead *.css,*.less set filetype=css
@@ -25,7 +25,12 @@ autocmd FileType eruby set nocindent autoindent smartindent
 
 "-----------------------------------------------------------[JavaScript]----
 autocmd BufNewFile,BufRead *.js,*.es6,*.jsx set filetype=javascript.jsx
-autocmd FileType javascript set nocindent autoindent smartindent
+autocmd FileType javascript.jsx set nocindent autoindent smartindent
+autocmd FileType javascript.jsx hi jsFuncCall guifg=#b0ff49
+autocmd FileType javascript.jsx hi jsObjectKey guifg=#FFD398
+autocmd FileType javascript.jsx hi jsFuncArgs guifg=#FF7349
+
+ 
 
 "---------------------------------------------------------[Coffeescript]----
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
