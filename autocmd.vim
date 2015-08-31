@@ -24,7 +24,7 @@ autocmd BufNewFile,BufRead *.erb set filetype=eruby
 autocmd FileType eruby set nocindent autoindent smartindent
 
 "-----------------------------------------------------------[JavaScript]----
-autocmd BufNewFile,BufRead *.js set filetype=javascript
+autocmd BufNewFile,BufRead *.js,*.es6,*.jsx set filetype=javascript.jsx
 autocmd FileType javascript set nocindent autoindent smartindent
 
 "---------------------------------------------------------[Coffeescript]----
