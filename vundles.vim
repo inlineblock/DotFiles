@@ -47,8 +47,10 @@ Bundle 'vim-scripts/rdark-terminal'
 Bundle 'vim-scripts/silent.vim'
 Bundle 'vim-scripts/vanzan_color'
 
-
 "Command-T (Ruby for mvim)
 Bundle 'wincent/Command-T'
+
+"multiple cursors
+Bundle 'terryma/vim-multiple-cursors'
 
 filetype plugin indent on " they say its required.

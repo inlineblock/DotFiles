@@ -1,11 +1,11 @@
 "------------------------------------------------------------------[General]----"
+scriptencoding utf-8
+set encoding=utf-8
 source ~/.vim/vundles.vim
 set secure "locks down the exrc setting
 set exrc "enable cwd .vimrc files
 	
 set nocompatible
-set encoding=utf8
-
 
 syntax on
 filetype plugin indent on
@@ -37,7 +37,6 @@ set nu
 set laststatus=2
 "set ruler
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-set listchars=tab:▶━,trail:⌴,extends:▶,precedes:◀
 
 set splitbelow
 set splitright
@@ -83,7 +82,7 @@ set wildmenu
 set showmatch
 set matchtime=2
 
-set wildignore+=*.o,*.obj,.git,public/assets/**,tmp/**,*.gif,*.png,*.jpg,*.jpeg,*.eot,*.ttf,*.woff,*.gem,*.swf,log/**
+set wildignore+=*.o,*.obj,.git,public/assets/**,tmp/**,*.gif,*.png,*.jpg,*.jpeg,*.eot,*.ttf,*.woff,*.gem,*.swf,log/**,node_modules/**,public/channels/**
 
 source ~/.vim/autocmd.vim
 source ~/.vim/keybindings.vim
@@ -91,3 +90,6 @@ set backupskip=/tmp/*,/private/tmp/*
 "-----------------------------------------------------------[JavaScript]----
 let g:jsx_ext_required = 0
 let javascript_enable_domhtmlcss = 1
+
+
+set listchars=tab:▶━,trail:⌴,extends:▶,precedes:◀

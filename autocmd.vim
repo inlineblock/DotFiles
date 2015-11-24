@@ -19,6 +19,10 @@ autocmd FileType haml set makeprg=haml\ %:p\ %:p:s?haml?html?
 autocmd BufNewFile,BufRead *.sass set filetype=sass
 
 
+"-----------------------------------------------------------------[SCSS]----
+autocmd BufNewFile,BufRead *.scss set filetype=scss.css
+
+
 "-----------------------------------------------------------------[ERB]----
 autocmd BufNewFile,BufRead *.erb set filetype=eruby
 autocmd FileType eruby set nocindent autoindent smartindent

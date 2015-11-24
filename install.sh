@@ -47,6 +47,8 @@ vundlize ()
 	rvm use system
 	CC=/usr/bin/gcc ruby extconf.rb
 	CC=/usr/bin/gcc make
+
+  cd ~/.vim
 }
 
 setgit ()
