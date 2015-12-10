@@ -61,7 +61,7 @@ endfunction
 let g:SuperTabSetDefaultCompletionType="context"
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 nmap <leader>tb :TagbarToggle<CR>
-let g:syntastic_javascript_checker="jshint"
+let g:syntastic_javascript_checkers = ['eslint']
 silent! sign define SyntasticError text=!>
 silent! sign define SyntasticWarning text=W>
 

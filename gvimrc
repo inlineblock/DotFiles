@@ -1,6 +1,6 @@
 scriptencoding utf-8
 set guioptions=ae
-set guifont=ProFontX:h16.00
+set guifont=ProFontX:h13.00
 ""set guifont=Monaco:h10.00
 "colors jolokai
 ""colors pyte
