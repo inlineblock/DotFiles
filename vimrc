@@ -91,5 +91,3 @@ set backupskip=/tmp/*,/private/tmp/*
 let g:jsx_ext_required = 0
 let javascript_enable_domhtmlcss = 1
 
-
-set listchars=tab:▶━,trail:⌴,extends:▶,precedes:◀
