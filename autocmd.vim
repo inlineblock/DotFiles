@@ -5,6 +5,7 @@
 "-----------------------------------------------------------------[HTML]----
 autocmd BufNewFile,BufRead *.htm,*.html set filetype=html.css.javascript.jsx
 autocmd FileType html.css.javascript.jsx set nocindent autoindent smartindent
+autocmd FileType eruby set colorcolumn=100
 
 "------------------------------------------------------------------[CSS]----
 autocmd BufNewFile,BufRead *.css,*.less set filetype=css
@@ -26,6 +27,7 @@ autocmd BufNewFile,BufRead *.scss set filetype=scss.css
 "-----------------------------------------------------------------[ERB]----
 autocmd BufNewFile,BufRead *.erb set filetype=eruby
 autocmd FileType eruby set nocindent autoindent smartindent
+autocmd FileType eruby set colorcolumn=140
 
 "-----------------------------------------------------------[JavaScript]----
 autocmd BufNewFile,BufRead *.js,*.es6,*.jsx set filetype=javascript.jsx
@@ -33,6 +35,7 @@ autocmd FileType javascript.jsx set nocindent autoindent smartindent
 autocmd FileType javascript.jsx hi jsFuncCall guifg=#b0ff49
 autocmd FileType javascript.jsx hi jsObjectKey guifg=#FFD398
 autocmd FileType javascript.jsx hi jsFuncArgs guifg=#FF7349
+autocmd FileType javascript.jsx set colorcolumn=160
 
  
 
@@ -44,6 +47,8 @@ autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 autocmd BufNewFile,BufRead *.rb,*.rbw,*.gem,*.gemspec,[rR]akefile,*.rake,*.thor set filetype=ruby
 autocmd FileType ruby set dictionary=$HOME/.vim/dict/ruby.dict
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby set re=1
+autocmd FileType ruby set colorcolumn=140
 
 "---------------------------------------------------------[ActionScript]----
 autocmd BufNewFile,BufRead *.as set filetype=actionscript
