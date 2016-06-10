@@ -35,6 +35,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/Align'
 Bundle 'wavded/vim-stylus'
 Bundle 'janx/vim-rubytest'
+Bundle 'mtscout6/syntastic-local-eslint.vim'
 
 "colorschemes
 Bundle 'tomasr/molokai'
