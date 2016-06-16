@@ -29,16 +29,20 @@ Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
+Bundle 'mgamba/edit-plus'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/Align'
 Bundle 'wavded/vim-stylus'
 Bundle 'janx/vim-rubytest'
 Bundle 'mtscout6/syntastic-local-eslint.vim'
+Bundle 'scrooloose/nerdcommenter'
 
 "colorschemes
 Bundle 'tomasr/molokai'
+Bundle 'Peeja/insert_mode_background_color'
 
 "Command-T (Ruby for mvim)
 Bundle 'wincent/Command-T'

@@ -31,6 +31,4 @@ imap <F1> <Esc>
 
 imap <S-BS> <C-[>diwi
 
-vnoremap / 0<C-V>I// <esc>
-
 command GdiffInTab tabedit %|Gdiff

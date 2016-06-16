@@ -7,6 +7,8 @@
 [merge]
 	tool = opendiff
 [push]
-  default = simple
+  default = current
 [color]
-	ui = auto
+  ui = auto
+[branch]
+	autosetupmerge = always
