@@ -7,7 +7,7 @@
 [merge]
 	tool = opendiff
 [push]
-  default = current
+  default = upstream
 [color]
   ui = auto
 [branch]
