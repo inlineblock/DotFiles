@@ -32,3 +32,4 @@ imap <F1> <Esc>
 imap <S-BS> <C-[>diwi
 
 command GdiffInTab tabedit %|Gdiff
+map <Leader>L <Plug>RubyLastRun
