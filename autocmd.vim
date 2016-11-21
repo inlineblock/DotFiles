@@ -21,7 +21,7 @@ autocmd BufNewFile,BufRead *.sass set filetype=sass
 
 
 "-----------------------------------------------------------------[SCSS]----
-autocmd BufNewFile,BufRead *.scss set filetype=scss.css
+autocmd BufNewFile,BufRead *.scss set filetype=scss
 
 
 "-----------------------------------------------------------------[ERB]----
