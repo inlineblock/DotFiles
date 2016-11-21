@@ -4,6 +4,7 @@ alias vi='vim' # never use vi
 #git 
 alias gs="git status"
 alias master="git checkout master"
+alias gti="git"
 
 # bundler aliases
 alias b="bundle"

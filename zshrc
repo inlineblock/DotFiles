@@ -78,6 +78,9 @@ bindkey -e
 if [ -f $HOME/.privaterc ]; then
   source $HOME/.privaterc
 fi
+if [ -f $HOME/Nuvi/dotfiles/nuvi.sh ]; then
+  source $HOME/Nuvi/dotfiles/nuvi.sh
+fi
 
 source ~/.bash_aliases
 source ~/.bash_functions

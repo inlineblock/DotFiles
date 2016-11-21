@@ -2,3 +2,6 @@
 function rb2 {
   rvm use ruby-2.1.0@${PWD##*/} --create
 }
+function nx {
+   $(npm bin)/$@  
+}
