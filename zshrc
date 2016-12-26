@@ -97,8 +97,8 @@ fi
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export NVM_DIR="/Users/wilkinsd/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 if [ -n "$(type fortune)" ] && [ "$(type fortune)" = function ]; then
   if [ -n "$(type ponysay)" ] && [ "$(type ponysay)" = function ]; then
     fortune | ponysay
