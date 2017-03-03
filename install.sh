@@ -40,7 +40,7 @@ vundlize ()
 	else
 		git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 	fi
-	vim +BundleInstall +qall
+	vim +PluginInstall +qall
 
 	# now we need to build command T
 	cd ~/.vim/bundle/Command-T/ruby/command-t/
