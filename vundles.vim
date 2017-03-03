@@ -38,6 +38,7 @@ Bundle 'wavded/vim-stylus'
 Bundle 'janx/vim-rubytest'
 Bundle 'mtscout6/syntastic-local-eslint.vim'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'groenewege/vim-less'
 
 "colorschemes
 Bundle 'tomasr/molokai'
