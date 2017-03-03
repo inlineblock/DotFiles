@@ -15,6 +15,7 @@ set shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 
 set nowrap
 set nofoldenable
+set noautochdir
 set autoindent
 	
 
@@ -90,4 +91,6 @@ set backupskip=/tmp/*,/private/tmp/*
 "-----------------------------------------------------------[JavaScript]----
 let g:jsx_ext_required = 0
 let javascript_enable_domhtmlcss = 1
-
+let g:CommandTTraverseSCM = 'pwd'
+let g:CommandTFileScanner = 'git'
+let g:CommandTScanDotDirectories = 1
