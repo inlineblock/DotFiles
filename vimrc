@@ -15,7 +15,6 @@ set shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 
 set nowrap
 set nofoldenable
-set noautochdir
 set autoindent
 	
 
@@ -49,6 +48,8 @@ colorscheme molokai
 "set bg=light
 
 syn on
+source ~/.vim/autocmd.vim
+source ~/.vim/keybindings.vim
 
 silent! set colorcolumn=90
 
@@ -85,12 +86,12 @@ set matchtime=2
 
 set wildignore+=*.o,*.obj,.git,public/assets/**,tmp/**,*.gif,*.png,*.jpg,*.jpeg,*.eot,*.ttf,*.woff,*.gem,*.swf,log/**,node_modules/**,public/channels/**
 
-source ~/.vim/autocmd.vim
-source ~/.vim/keybindings.vim
 set backupskip=/tmp/*,/private/tmp/*
 "-----------------------------------------------------------[JavaScript]----
 let g:jsx_ext_required = 0
 let javascript_enable_domhtmlcss = 1
-let g:CommandTTraverseSCM = 'pwd'
-let g:CommandTFileScanner = 'git'
 let g:CommandTScanDotDirectories = 1
+let g:NERDTreeChDirMode = 0
+let g:NERDTreeShowHidden = 1
+let g:spf13_no_autochdir = 1
+set noautochdir
