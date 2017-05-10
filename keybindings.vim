@@ -19,9 +19,6 @@ vnoremap > >gv
 
 map <Leader>rt ggVG :retab<CR>
 
-"map <C-F> :CommandT<CR>
-" i hate flushing, so this just does it for me automatically, but would be
-" slow on huge filesets
 map <C-F> :CommandT<CR>
 map <C-T> :tab new<CR>
 nmap <F1> <Esc>

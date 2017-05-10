@@ -37,6 +37,7 @@ Plugin 'wavded/vim-stylus'
 Plugin 'janx/vim-rubytest'
 Plugin 'inlineblock/syntastic-local-eslint.vim'
 Plugin 'groenewege/vim-less'
+Plugin 'easymotion/vim-easymotion'
 
 "colorschemes
 Plugin 'tomasr/molokai'
