@@ -66,6 +66,7 @@ setgit ()
 	if [[ ! -z $gemail ]] ; then
 		git config --global user.email "$gemail"
 	fi
+  git config --global push.default simple
 }
 
 while true; do

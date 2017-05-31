@@ -98,9 +98,5 @@ fi
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-if [ -n "$(type fortune)" ] && [ "$(type fortune)" = function ]; then
-  if [ -n "$(type ponysay)" ] && [ "$(type ponysay)" = function ]; then
-    fortune | ponysay
-  fi
-fi
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
