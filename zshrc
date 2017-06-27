@@ -37,7 +37,9 @@ source $ZSH/oh-my-zsh.sh
 #export PATH=/Users/dennis/Scripts:/usr/local/sbin:$PATH:/usr/local/CrossPack-AVR/bin
 export PATH=/Users/dennis/Scripts:/usr/local/bin:/usr/local/sbin:$PATH
 export EDITOR=vim
-source $HOME/.rvm/scripts/rvm
+if [ -d $HOME/.rvm ]; then
+  source $HOME/.rvm/scripts/rvm
+fi
 #export NODE_PATH=/usr/local/lib/node_modules
 
 bindkey "\e[1~" beginning-of-line # Home
@@ -70,7 +72,9 @@ bindkey "^[[1;5C" forward-word
 bindkey "\e[3~" delete-char # Del
 
 export GCC=/usr/bin/gcc
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+if [ -d $HOME/.rvm ]; then
+  PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+fi
 export CC=$GCC
 bindkey -e
 
