@@ -114,8 +114,8 @@ autocmd VimEnter * call SetupNERDTREEListeners()
 let g:EasyMotion_smartcase = 1
 nmap f <Plug>(easymotion-s2)
 nmap F <Plug>(easymotion-t2)
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
+" map  / <Plug>(easymotion-sn)
+" omap / <Plug>(easymotion-tn)
 " These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
 " Without these mappings, `n` & `N` works fine. (These mappings just provide
 " different highlight method and have some other features )
