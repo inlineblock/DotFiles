@@ -84,32 +84,17 @@ set wildmenu
 set showmatch
 set matchtime=2
 
-set wildignore+=*.o,*.obj,.git,public/assets/**,tmp/**,*.gif,*.png,*.jpg,*.jpeg,*.eot,*.ttf,*.woff,*.gem,*.swf,log/**,node_modules/**,public/channels/**
+set wildignore+=*.o,*.obj,.git,*/tmp/*,*.gif,*.png,*.jpg,*.jpeg,*.eot,*.ttf,*.woff,*.gem,*.swf,*/log/**,*/node_modules/*,*/public/channels/*,*.git/*
 
 set backupskip=/tmp/*,/private/tmp/*
 "-----------------------------------------------------------[JavaScript]----
 let g:jsx_ext_required = 0
 let javascript_enable_domhtmlcss = 1
-let g:CommandTScanDotDirectories = 1
 "-------------------------------------------------------------[NerdTree]----
 let g:NERDTreeChDirMode = 0
 let g:NERDTreeShowHidden = 1
 let g:spf13_no_autochdir = 1
 set noautochdir
-
-function! CTNERDTreeListener(event)
-  execute ":CommandTFlush"
-endfunction
-function! SetupNERDTREEListeners()
-  if exists('g:NERDTreePathNotifier') && !exists('g:loaded_command_t_nerd_tree_listener')
-    let g:loaded_command_t_nerd_tree_listener = 1
-    call g:NERDTreePathNotifier.AddListener("init", "CTNERDTreeListener")
-    call g:NERDTreePathNotifier.AddListener("refresh", "CTNERDTreeListener")
-    call g:NERDTreePathNotifier.AddListener("refreshFlags", "CTNERDTreeListener")
-  endif
-endfunction
-autocmd VimEnter * call SetupNERDTREEListeners()
-
 "-----------------------------------------------------------[EasyMotion]----
 let g:EasyMotion_smartcase = 1
 nmap f <Plug>(easymotion-s2)

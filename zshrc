@@ -37,10 +37,6 @@ source $ZSH/oh-my-zsh.sh
 #export PATH=/Users/dennis/Scripts:/usr/local/sbin:$PATH:/usr/local/CrossPack-AVR/bin
 export PATH=/Users/dennis/Scripts:/usr/local/bin:/usr/local/sbin:$PATH
 export EDITOR=vim
-if [ -d $HOME/.rvm ]; then
-  source $HOME/.rvm/scripts/rvm
-fi
-#export NODE_PATH=/usr/local/lib/node_modules
 
 bindkey "\e[1~" beginning-of-line # Home
 bindkey "\e[4~" end-of-line # End
@@ -72,9 +68,6 @@ bindkey "^[[1;5C" forward-word
 bindkey "\e[3~" delete-char # Del
 
 export GCC=/usr/bin/gcc
-if [ -d $HOME/.rvm ]; then
-  PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-fi
 export CC=$GCC
 bindkey -e
 
@@ -82,15 +75,22 @@ bindkey -e
 if [ -f $HOME/.privaterc ]; then
   source $HOME/.privaterc
 fi
-if [ -f $HOME/Nuvi/dotfiles/nuvi.sh ]; then
-  source $HOME/Nuvi/dotfiles/nuvi.sh
+
+if [ -d $HOME/.rbenv/shims ]; then
+  export PATH="$HOME/.rbenv/shims:$PATH"
+  eval "$(rbenv init -)"
 fi
+
 
 source ~/.bash_aliases
 source ~/.bash_functions
 
 if [ -d $HOME/bin ]; then
   export PATH=$PATH:$HOME/bin
+fi
+
+if [ -f $HOME/.profile ]; then
+  source ~/.profile
 fi
 
 if [ -d /usr/local/share/npm/bin ]; then
@@ -110,3 +110,4 @@ ZSH_THEME_HG_PROMPT_CLEAN="%{$fg[magenta]%})"
 PROMPT='%{$fg[$NCOLOR]%}%n%{$fg[green]%}@%m%{$reset_color%} %~ \
 $(git_prompt_info)$(hg_prompt_info)\
 %{$fg[red]%}%(!.#.»)%{$reset_color%}'
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

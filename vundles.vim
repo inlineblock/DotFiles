@@ -21,7 +21,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'mattn/emmet-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
-Plugin 'Rykka/colorv.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
@@ -38,13 +37,15 @@ Plugin 'janx/vim-rubytest'
 Plugin 'inlineblock/syntastic-local-eslint.vim'
 Plugin 'groenewege/vim-less'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'etdev/vim-hexcolor'
+Plugin 'prettier/vim-prettier'
 
 "colorschemes
 Plugin 'tomasr/molokai'
 Plugin 'Peeja/insert_mode_background_color'
 
 "Command-T (Ruby for mvim)
-Plugin 'Command-T'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 "multiple cursors
 Plugin 'terryma/vim-multiple-cursors'

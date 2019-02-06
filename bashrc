@@ -1,7 +1,3 @@
 source .zshrc
 
-alias vi="vim" # always.
-
-if [ -d $HOME/.rvm ]; then
-  PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-fi
+alias vi="vim" # always. i'm a bad boy

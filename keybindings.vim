@@ -19,7 +19,7 @@ vnoremap > >gv
 
 map <Leader>rt ggVG :retab<CR>
 
-map <C-F> :CommandT<CR>
+map <C-F> :CtrlP<CR>
 map <C-T> :tab new<CR>
 nmap <F1> <Esc>
 imap <F1> <Esc>

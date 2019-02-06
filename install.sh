@@ -41,14 +41,8 @@ vundlize ()
 		git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 	fi
 	vim +PluginInstall +qall
-
-	# now we need to build command T
-	cd ~/.vim/bundle/Command-T/ruby/command-t/
-	rvm use system
-	CC=/usr/bin/gcc ruby extconf.rb
-	CC=/usr/bin/gcc make
-
-  cd ~/.vim
+	cd ~/.vim/bundle/vim-prettier
+  yarn install
 }
 
 setgit ()

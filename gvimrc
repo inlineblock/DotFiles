@@ -12,3 +12,13 @@ set fileencoding=utf-8
 set encoding=utf-8
 
 hi ColorColumn guibg=Black
+
+let g:ctrlp_buffer_func = { 'enter': 'LargeFontHighlightOn', 'exit':  'LargeFontHighlightOff', }
+
+function LargeFontHighlightOn()
+  hi CursorLine guibg=#005588
+endfunction
+
+function LargeFontHighlightOff()
+  hi CursorLine guibg=#293739
+endfunction
