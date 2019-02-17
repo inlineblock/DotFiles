@@ -90,6 +90,7 @@ set backupskip=/tmp/*,/private/tmp/*
 "-----------------------------------------------------------[JavaScript]----
 let g:jsx_ext_required = 0
 let javascript_enable_domhtmlcss = 1
+let g:vim_json_syntax_conceal = 0
 "-------------------------------------------------------------[NerdTree]----
 let g:NERDTreeChDirMode = 0
 let g:NERDTreeShowHidden = 1
