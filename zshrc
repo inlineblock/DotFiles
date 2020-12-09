@@ -37,41 +37,41 @@ source $ZSH/oh-my-zsh.sh
 #export PATH=/Users/dennis/Scripts:/usr/local/sbin:$PATH:/usr/local/CrossPack-AVR/bin
 export PATH=/Users/dennis/Scripts:/usr/local/bin:/usr/local/sbin:$PATH
 export EDITOR=vim
+if ! type "bindkey" > /dev/null; then
+  bindkey "\e[1~" beginning-of-line # Home
+  bindkey "\e[4~" end-of-line # End
+  bindkey "\e[5~" beginning-of-history # PageUp
+  bindkey "\e[6~" end-of-history # PageDown
+  bindkey "\e[2~" quoted-insert # Ins
+  bindkey "\e[3~" delete-char # Del
+  bindkey "\e[5C" forward-word
+  bindkey "\eOc" emacs-forward-word
+  bindkey "\e[5D" backward-word
+  bindkey "\eOd" emacs-backward-word
+  bindkey "\e\e[C" forward-word
+  bindkey "\e\e[D" backward-word
+  bindkey "\e[Z" reverse-menu-complete # Shift+Tab
+  # for rxvt
+  bindkey "\e[7~" beginning-of-line # Home
+  bindkey "\e[8~" end-of-line # End
+  # for non RH/Debian xterm, can't hurt for RH/Debian xterm
+  bindkey "\eOH" beginning-of-line
+  bindkey "\eOF" end-of-line
+  # for freebsd console
+  bindkey "\e[H" beginning-of-line
+  bindkey "\e[F" end-of-line
+  # for guake
+  bindkey "\eOF" end-of-line
+  bindkey "\eOH" beginning-of-line
+  bindkey "^[[1;5D" backward-word
+  bindkey "^[[1;5C" forward-word
+  bindkey "\e[3~" delete-char # Del
 
-bindkey "\e[1~" beginning-of-line # Home
-bindkey "\e[4~" end-of-line # End
-bindkey "\e[5~" beginning-of-history # PageUp
-bindkey "\e[6~" end-of-history # PageDown
-bindkey "\e[2~" quoted-insert # Ins
-bindkey "\e[3~" delete-char # Del
-bindkey "\e[5C" forward-word
-bindkey "\eOc" emacs-forward-word
-bindkey "\e[5D" backward-word
-bindkey "\eOd" emacs-backward-word
-bindkey "\e\e[C" forward-word
-bindkey "\e\e[D" backward-word
-bindkey "\e[Z" reverse-menu-complete # Shift+Tab
-# for rxvt
-bindkey "\e[7~" beginning-of-line # Home
-bindkey "\e[8~" end-of-line # End
-# for non RH/Debian xterm, can't hurt for RH/Debian xterm
-bindkey "\eOH" beginning-of-line
-bindkey "\eOF" end-of-line
-# for freebsd console
-bindkey "\e[H" beginning-of-line
-bindkey "\e[F" end-of-line
-# for guake
-bindkey "\eOF" end-of-line
-bindkey "\eOH" beginning-of-line
-bindkey "^[[1;5D" backward-word
-bindkey "^[[1;5C" forward-word
-bindkey "\e[3~" delete-char # Del
+  bindkey -e
+fi
 
 export GCC=/usr/bin/gcc
 export CC=$GCC
-bindkey -e
-
-
 if [ -f $HOME/.privaterc ]; then
   source $HOME/.privaterc
 fi
