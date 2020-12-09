@@ -31,13 +31,15 @@ export GIT_MERGE_AUTOEDIT=no
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git mercurial brew node npm vi-mode)
 
-source $ZSH/oh-my-zsh.sh
+if [ -f $ZSH/oh-my-zsh.sh ]; then
+  source $ZSH/oh-my-zsh.sh
+fi
 
 # Customize to your needs...
 #export PATH=/Users/dennis/Scripts:/usr/local/sbin:$PATH:/usr/local/CrossPack-AVR/bin
 export PATH=/Users/dennis/Scripts:/usr/local/bin:/usr/local/sbin:$PATH
 export EDITOR=vim
-if ! type "bindkey" > /dev/null; then
+if ! type bindkey > /dev/null; then
   bindkey "\e[1~" beginning-of-line # Home
   bindkey "\e[4~" end-of-line # End
   bindkey "\e[5~" beginning-of-history # PageUp
@@ -70,8 +72,11 @@ if ! type "bindkey" > /dev/null; then
   bindkey -e
 fi
 
-export GCC=/usr/bin/gcc
-export CC=$GCC
+if [ -f /usr/bin/gcc ]; then
+  export GCC=/usr/bin/gcc
+  export CC=$GCC
+fi
+
 if [ -f $HOME/.privaterc ]; then
   source $HOME/.privaterc
 fi
@@ -82,8 +87,12 @@ if [ -d $HOME/.rbenv/shims ]; then
 fi
 
 
-source ~/.bash_aliases
-source ~/.bash_functions
+if [ -f $HOME/.bash_aliases ]; then
+  source $HOME/.bash_aliases
+fi
+if [ -f $HOME/.bash_functions ]; then
+  source $HOME/.bash_functions
+fi
 
 if [ -d $HOME/bin ]; then
   export PATH=$PATH:$HOME/bin
@@ -97,12 +106,24 @@ if [ -d /usr/local/share/npm/bin ]; then
   export PATH=$PATH:/usr/local/share/npm/bin
 fi
 
+if type tmux >/dev/null 2>/dev/null; then
+  if [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then
+    tmux attach
+  fi
+fi
+
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+if [ -d /usr/local/heroku/bin ]; then
+  export PATH="/usr/local/heroku/bin:$PATH"
+fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+if [ -d $HOME/.nvm ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
+
 ZSH_THEME_HG_PROMPT_PREFIX="%{$fg_bold[magenta]%}hg:(%{$fg[red]%}"
 ZSH_THEME_HG_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_HG_PROMPT_DIRTY="%{$fg[magenta]%}) %{$fg[yellow]%}✗%{$reset_color%}"
@@ -110,4 +131,3 @@ ZSH_THEME_HG_PROMPT_CLEAN="%{$fg[magenta]%})"
 PROMPT='%{$fg[$NCOLOR]%}%n%{$fg[green]%}@%m%{$reset_color%} %~ \
 $(git_prompt_info)$(hg_prompt_info)\
 %{$fg[red]%}%(!.#.»)%{$reset_color%}'
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
