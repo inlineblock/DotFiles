@@ -10,6 +10,7 @@ removeFiles()
 	rm -f ~/.gitconfig ~/.gitignore_global ~/.gvimrc ~/.gemrc
 	rm -rf ~/.inputrc ~/.jshintrc ~/.jsl.conf ~/.vimrc ~/.vundles ~/.zshrc ~/.bash_functions
 	rm -rf ~/.bashrc ~/.bash_aliases
+  rm -f ~/.tmux.conf
 }
 
 makeLinks()
@@ -28,6 +29,7 @@ makeLinks()
 	ln -s $DIR/bash_aliases ~/.bash_aliases
 	ln -s $DIR/bash_functions ~/.bash_functions
 	ln -s $DIR/gemrc ~/.gemrc
+	ln -s $DIR/tmux.conf ~/.tmux.conf
 
 	cp $DIR/gitconfig ~/.gitconfig
 }

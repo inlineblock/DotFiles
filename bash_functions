@@ -2,3 +2,7 @@
 function nx {
    $(npm bin)/$@  
 }
+
+function msh {
+  mosh $1 -- tmux a
+}
