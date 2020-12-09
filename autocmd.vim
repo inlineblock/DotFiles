@@ -31,7 +31,7 @@ autocmd FileType eruby set nocindent autoindent smartindent
 autocmd FileType eruby set colorcolumn=140
 
 "-----------------------------------------------------------[JavaScript]----
-autocmd BufNewFile,BufRead *.js,*.es6,*.jsx set filetype=javascript.jsx
+autocmd BufNewFile,BufRead *.ts,*.js,*.es6,*.jsx set filetype=javascript.jsx
 autocmd FileType javascript.jsx set nocindent autoindent smartindent
 autocmd FileType javascript.jsx hi jsFuncCall guifg=#b0ff49
 autocmd FileType javascript.jsx hi jsObjectKey guifg=#FFD398
