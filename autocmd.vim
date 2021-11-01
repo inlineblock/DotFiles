@@ -31,14 +31,18 @@ autocmd FileType eruby set nocindent autoindent smartindent
 autocmd FileType eruby set colorcolumn=140
 
 "-----------------------------------------------------------[JavaScript]----
-autocmd BufNewFile,BufRead *.ts,*.js,*.es6,*.jsx set filetype=javascript.jsx
+autocmd BufNewFile,BufRead *.tsx,*.ts,*.js,*.es6,*.jsx set filetype=javascript.jsx
 autocmd FileType javascript.jsx set nocindent autoindent smartindent
 autocmd FileType javascript.jsx hi jsFuncCall guifg=#b0ff49
 autocmd FileType javascript.jsx hi jsObjectKey guifg=#FFD398
 autocmd FileType javascript.jsx hi jsFuncArgs guifg=#FF7349
 autocmd FileType javascript.jsx set colorcolumn=160
 
- 
+"---------------------------------------------------------[TypeScript]----
+" autocmd BufNewFile,BufRead *.tsx,*.ts set filetype=typescript
+" autocmd FileType typescript :set makeprg=tsc
+let g:typescript_compiler_binary = 'tsc'
+let g:typescript_indent_disable = 1
 
 "---------------------------------------------------------[Coffeescript]----
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee

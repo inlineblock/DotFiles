@@ -8,7 +8,7 @@ removeFiles()
 {
 	rm -rf ~/.vim
 	rm -f ~/.gitconfig ~/.gitignore_global ~/.gvimrc ~/.gemrc
-	rm -rf ~/.inputrc ~/.jshintrc ~/.jsl.conf ~/.vimrc ~/.vundles ~/.zshrc ~/.bash_functions
+	rm -rf ~/.inputrc ~/.vimrc ~/.vundles ~/.zshrc ~/.bash_functions
 	rm -rf ~/.bashrc ~/.bash_aliases
   rm -f ~/.tmux.conf
 }
@@ -20,8 +20,6 @@ makeLinks()
 	ln -s $DIR/gitignore_global ~/.gitignore_global
 	ln -s $DIR/gvimrc ~/.gvimrc
 	ln -s $DIR/inputrc ~/.inputrc
-	ln -s $DIR/jshintrc ~/.jshintrc
-	ln -s $DIR/jsl.conf ~/.jsl.conf
 	ln -s $DIR/vimrc ~/.vimrc
 	ln -s $DIR/*.vim ~/.vim/
 	ln -s $DIR/zshrc ~/.zshrc

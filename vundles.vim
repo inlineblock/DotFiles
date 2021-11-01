@@ -40,6 +40,10 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'etdev/vim-hexcolor'
 Plugin 'prettier/vim-prettier'
 
+Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'maxmellon/vim-jsx-pretty'
 "colorschemes
 Plugin 'tomasr/molokai'
 Plugin 'Peeja/insert_mode_background_color'
